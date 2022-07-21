@@ -3,3 +3,10 @@ docker build --tag python-django .
 
 #the publish flag allows mapping across from container to the port os
 docker run --publish 8000:8000 python-django
+----
+docker-compose build
+
+docker-compose run --rm app django-admin startproject base .
+
+docker-compose up
+----
