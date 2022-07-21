@@ -1,0 +1,5 @@
+#creates docker image and utilizing the tag flag to name it and the . refers to the root dir
+docker build --tag python-django .
+
+#the publish flag allows mapping across from container to the port os
+docker run --publish 8000:8000 python-django
